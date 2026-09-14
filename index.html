@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f8fa">
+  <title>2027 推免李昱萱男朋友申请书</title>
+  <style>
+    :root {
+      --bg: #f6f8fa;
+      --card: rgba(255,255,255,.93);
+      --ink: #1f2328;
+      --muted: #636c76;
+      --line: #d0d7de;
+      --green: #1f883d;
+      --pink: #ff5d8f;
+      --red: #e83e6d;
+      --mx: 50vw;
+      --my: 30vh;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { min-height: 100%; }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      overflow-x: hidden;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      background:
+        radial-gradient(500px circle at var(--mx) var(--my), rgba(255, 122, 162, .13), transparent 58%),
+        linear-gradient(135deg, #f6f8fa 0%, #fff5f8 48%, #f2fbf5 100%);
+      background-attachment: fixed;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(115deg, transparent 30%, rgba(255,255,255,.5) 46%, transparent 62%);
+      background-size: 220% 100%;
+      animation: page-shimmer 10s ease-in-out infinite;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: clamp(28px, 6vw, 72px) auto;
+      perspective: 1100px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .paper {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 6vw, 58px);
+      border: 1px solid var(--line);
+      border-top: 5px solid var(--green);
+      border-radius: 12px;
+      background: var(--card);
+      box-shadow: 0 16px 42px rgba(31,35,40,.10), 0 0 0 1px rgba(255,255,255,.7) inset;
+      transform-style: preserve-3d;
+      transition: transform .18s ease-out, box-shadow .25s ease;
+      animation: card-arrive .75s cubic-bezier(.2,.75,.25,1) both, card-breathe 4s ease-in-out .8s infinite;
+      backdrop-filter: blur(8px);
+    }
+
+    .paper::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.75) 50%, transparent 60%);
+      transform: translateX(-120%);
+      animation: card-shine 7s ease-in-out 1.4s infinite;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      text-align: center;
+      font-size: clamp(25px, 5vw, 38px);
+      line-height: 1.25;
+      letter-spacing: -.02em;
+    }
+
+    .subtitle {
+      margin: 0 0 36px;
+      text-align: center;
+      color: var(--muted);
+      font: 600 13px/1.4 ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      letter-spacing: .04em;
+    }
+
+    .heart-mark {
+      display: inline-block;
+      color: var(--red);
+      margin-left: .18em;
+      transform-origin: center;
+      animation: heartbeat 1.45s ease-in-out infinite;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: 116px 1fr;
+      margin: 0 0 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 15px;
+    }
+
+    .meta dt, .meta dd { margin: 0; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+    .meta dt { color: var(--muted); background: #f6f8fa; font-weight: 600; }
+    .meta dd { background: rgba(255,255,255,.62); }
+    .meta dt:last-of-type, .meta dd:last-of-type { border-bottom: 0; }
+
+    p, li { font-size: 16px; line-height: 1.88; }
+    p { margin: 0 0 18px; }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin: 30px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+      font-size: 19px;
+      line-height: 1.4;
+    }
+
+    h2::before {
+      content: "";
+      width: 4px;
+      height: 20px;
+      border-radius: 4px;
+      background: var(--green);
+    }
+
+    ul { margin: 0; padding-left: 1.3em; }
+    li { padding-left: .15em; margin: 5px 0; }
+    li::marker { color: var(--green); }
+
+    .approval {
+      margin-top: 34px;
+      padding: 16px 18px;
+      border: 1px dashed #8c959f;
+      border-radius: 8px;
+      background: #f6f8fa;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .signature { margin-top: 28px; text-align: right; color: #3b434b; }
+    .signature p { margin: 2px 0; line-height: 1.6; }
+
+    .float-heart, .burst-heart {
+      position: fixed;
+      z-index: 1;
+      pointer-events: none;
+      user-select: none;
+      color: var(--pink);
+      filter: drop-shadow(0 3px 5px rgba(232,62,109,.18));
+      will-change: transform, opacity;
+    }
+
+    .float-heart { bottom: -48px; animation: rise var(--duration) linear var(--delay) forwards; }
+    .burst-heart { z-index: 20; animation: burst .9s cubic-bezier(.18,.67,.25,1) forwards; }
+
+    @keyframes rise {
+      0% { opacity: 0; transform: translate3d(0,0,0) rotate(0deg) scale(.75); }
+      8% { opacity: .82; }
+      100% { opacity: 0; transform: translate3d(var(--drift), -115vh, 0) rotate(var(--spin)) scale(1.2); }
+    }
+
+    @keyframes burst {
+      0% { opacity: 1; transform: translate(-50%,-50%) scale(.35) rotate(0); }
+      72% { opacity: .95; }
+      100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.18) rotate(var(--rot)); }
+    }
+
+    @keyframes heartbeat { 0%, 100% { transform: scale(1); } 15% { transform: scale(1.22); } 28% { transform: scale(1); } 42% { transform: scale(1.13); } 60% { transform: scale(1); } }
+    @keyframes page-shimmer { 0%,100% { background-position: 120% 0; } 50% { background-position: -120% 0; } }
+    @keyframes card-shine { 0%, 72% { transform: translateX(-120%); } 90%,100% { transform: translateX(120%); } }
+    @keyframes card-arrive { from { opacity: 0; transform: translateY(18px) scale(.985); } to { opacity: 1; transform: translateY(0) scale(1); } }
+    @keyframes card-breathe { 0%,100% { box-shadow: 0 16px 42px rgba(31,35,40,.10), 0 0 0 rgba(31,136,61,0); } 50% { box-shadow: 0 18px 48px rgba(31,35,40,.12), 0 0 26px rgba(31,136,61,.08); } }
+
+    @media (max-width: 560px) {
+      main { width: min(100% - 20px, 760px); margin: 10px auto 24px; }
+      .paper { padding: 26px 20px 30px; border-radius: 10px; }
+      .subtitle { margin-bottom: 26px; }
+      .meta { grid-template-columns: 92px 1fr; font-size: 14px; }
+      .meta dt, .meta dd { padding: 9px 10px; }
+      p, li { font-size: 15px; line-height: 1.78; }
+      h2 { font-size: 18px; margin-top: 25px; }
+      .approval { padding: 13px 14px; font-size: 14px; }
+    }
+
+    @media (hover: none), (pointer: coarse) {
+      .paper { transform: none !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+      .float-heart, .burst-heart { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="paper" id="paper">
+      <h1>2027 推免李昱萱男朋友申请书 <span class="heart-mark" aria-hidden="true">♥</span></h1>
+      <p class="subtitle">APPLICATION FOR LONG-TERM MAINTENANCE</p>
+
+      <dl class="meta">
+        <dt>申请人</dt><dd>谭皓天</dd>
+        <dt>本科</dt><dd>武汉理工大学 · 人工智能</dd>
+        <dt>报考方向</dt><dd>李昱萱男朋友</dd>
+      </dl>
+
+      <p>亲爱的李昱萱大王：</p>
+      <p>本人现补上推免至李昱萱大王身边继续深造的推免申请书。考虑到本人已经提前上岗，具备一定“男朋友实习经验”，现申请免初试、免复试，直接续聘，并且永远满分上岗。</p>
+
+      <h2>一、申请理由 <span class="heart-mark" aria-hidden="true">♥</span></h2>
+      <ul>
+        <li>武汉理工大学人工智能在读，平时会写代码、找 Bug；感情里争取少制造 Bug</li>
+        <li>课题组做医学图像分割，但在恋爱反对“分割”</li>
+        <li>正在认真准备保研：保研是阶段任务，但是和李昱萱大王一直走下去是长期课题啦</li>
+        <li>最关键优势：我的女朋友是李昱萱大王 <span class="heart-mark" aria-hidden="true">♥</span></li>
+      </ul>
+
+      <h2>二、本人承诺 <span class="heart-mark" aria-hidden="true">♥</span></h2>
+      <ul>
+        <li>唯一志愿李昱萱，不服从调剂啊</li>
+        <li>忙前会说，不玩失踪</li>
+        <li>学习再忙，也不把李昱萱降级成“支线任务”</li>
+      </ul>
+
+      <h2>三、培养计划 <span class="heart-mark" aria-hidden="true">♥</span></h2>
+      <ul>
+        <li>短期：陪着你</li>
+        <li>中期：一起经历升学、保研、毕业、工作这些乱七八糟但重要的阶段</li>
+        <li>长期：永不毕业，永远爱你 <span class="heart-mark" aria-hidden="true">♥</span></li>
+      </ul>
+
+      <div class="approval">李昱萱大王审批： ☑ 同意　 ☑ 非常同意　 ☑ 直接长期录取（行了我帮你批了） <span class="heart-mark" aria-hidden="true">♥</span></div>
+
+      <div class="signature">
+        <p>申请人：谭皓天</p>
+        <p>2026 年 9 月</p>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    (() => {
+      const body = document.body;
+      const paper = document.getElementById('paper');
+      const glyphs = ['♥', '❤'];
+
+      function risingHeart(opening = false) {
+        const heart = document.createElement('span');
+        heart.className = 'float-heart';
+        heart.textContent = glyphs[Math.floor(Math.random() * glyphs.length)];
+        heart.style.left = `${Math.random() * 100}vw`;
+        heart.style.fontSize = `${12 + Math.random() * 23}px`;
+        heart.style.setProperty('--drift', `${-65 + Math.random() * 130}px`);
+        heart.style.setProperty('--spin', `${-80 + Math.random() * 160}deg`);
+        heart.style.setProperty('--duration', `${opening ? 3.2 + Math.random() * 2.8 : 5.2 + Math.random() * 3.6}s`);
+        heart.style.setProperty('--delay', `${opening ? Math.random() * .95 : 0}s`);
+        heart.style.color = Math.random() > .45 ? '#ff5d8f' : '#e83e6d';
+        body.appendChild(heart);
+        window.setTimeout(() => heart.remove(), 9000);
+      }
+
+      function burst(x, y, count = 13) {
+        for (let i = 0; i < count; i++) {
+          const heart = document.createElement('span');
+          const angle = (Math.PI * 2 * i / count) + (Math.random() - .5) * .35;
+          const distance = 58 + Math.random() * 88;
+          heart.className = 'burst-heart';
+          heart.textContent = glyphs[i % glyphs.length];
+          heart.style.left = `${x}px`;
+          heart.style.top = `${y}px`;
+          heart.style.fontSize = `${13 + Math.random() * 16}px`;
+          heart.style.setProperty('--dx', `${Math.cos(angle) * distance}px`);
+          heart.style.setProperty('--dy', `${Math.sin(angle) * distance}px`);
+          heart.style.setProperty('--rot', `${-100 + Math.random() * 200}deg`);
+          heart.style.color = i % 3 === 0 ? '#ff87aa' : '#e83e6d';
+          body.appendChild(heart);
+          window.setTimeout(() => heart.remove(), 950);
+        }
+      }
+
+      for (let i = 0; i < 28; i++) risingHeart(true);
+      window.setInterval(() => risingHeart(false), 1150);
+
+      document.addEventListener('pointerdown', event => {
+        if (event.button !== undefined && event.button !== 0) return;
+        burst(event.clientX, event.clientY);
+      });
+
+      document.addEventListener('pointermove', event => {
+        document.documentElement.style.setProperty('--mx', `${event.clientX}px`);
+        document.documentElement.style.setProperty('--my', `${event.clientY}px`);
+        if (event.pointerType === 'touch') return;
+        const rect = paper.getBoundingClientRect();
+        if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) {
+          paper.style.transform = '';
+          return;
+        }
+        const rx = ((event.clientY - rect.top) / rect.height - .5) * -2.2;
+        const ry = ((event.clientX - rect.left) / rect.width - .5) * 2.8;
+        paper.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+      });
+
+      paper.addEventListener('pointerleave', () => { paper.style.transform = ''; });
+    })();
+  </script>
+</body>
+</html>
