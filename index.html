@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>2027 推免李昱萱男朋友申请书</title>
+<title>写给李昱萱的第 100 天纪念信</title>
 
 
 
@@ -375,6 +375,117 @@ body::before{
 .section-trigger{
   cursor:default;
 }
+
+/* 100 天纪念信正文 */
+.letter-copy{
+  font-size:15px;
+  line-height:1.95;
+  color:#24292f;
+  word-break:break-word;
+}
+
+.letter-copy p{
+  margin:0 0 18px;
+  text-indent:2em;
+}
+
+.letter-copy .salutation{
+  margin-bottom:18px;
+  text-indent:0;
+  font-size:17px;
+  font-weight:700;
+}
+
+.letter-copy .closing{
+  margin-top:4px;
+  margin-bottom:0;
+}
+
+.letter-signature{
+  margin-top:28px;
+  text-align:right;
+  font-size:15px;
+  line-height:1.8;
+  color:#57606a;
+}
+
+/* 从页面顶部持续飘落的樱花花瓣 */
+.sakura-layer{
+  position:fixed;
+  inset:0;
+  z-index:8;
+  overflow:hidden;
+  pointer-events:none;
+}
+
+.sakura-petal{
+  position:absolute;
+  top:-42px;
+  left:var(--x);
+  width:var(--size);
+  height:calc(var(--size) * .72);
+  border-radius:85% 10% 82% 18%;
+  background:linear-gradient(135deg,rgba(255,255,255,.96) 0%,rgba(255,202,220,.96) 42%,rgba(255,126,168,.9) 100%);
+  box-shadow:0 2px 7px rgba(255,91,141,.16);
+  opacity:0;
+  transform-origin:50% 100%;
+  will-change:transform,opacity;
+  animation:sakuraFall var(--fall-duration) linear var(--delay) forwards;
+}
+
+.sakura-petal::after{
+  content:"";
+  position:absolute;
+  left:14%;
+  top:13%;
+  width:48%;
+  height:38%;
+  border-radius:50%;
+  background:rgba(255,255,255,.42);
+  transform:rotate(-18deg);
+}
+
+@keyframes sakuraFall{
+  0%{
+    opacity:0;
+    transform:translate3d(0,-5vh,0) rotateX(0deg) rotateZ(var(--start-rot));
+  }
+  8%{opacity:var(--opacity);}
+  50%{
+    transform:translate3d(var(--sway),52vh,0) rotateX(180deg) rotateZ(calc(var(--start-rot) + 210deg));
+  }
+  92%{opacity:var(--opacity);}
+  100%{
+    opacity:0;
+    transform:translate3d(var(--drift),108vh,0) rotateX(380deg) rotateZ(calc(var(--start-rot) + 430deg));
+  }
+}
+
+@media (max-width:600px){
+  .mail-shell{
+    border-radius:8px !important;
+  }
+  .letter-header{
+    padding:24px 20px 18px !important;
+  }
+  .letter-content{
+    padding:20px 20px 28px !important;
+  }
+  .title-wrap{
+    font-size:22px !important;
+  }
+  .letter-copy{
+    font-size:15px;
+    line-height:1.88;
+  }
+  .letter-copy p{
+    margin-bottom:16px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .sakura-layer{display:none;}
+}
 </style>
 
 </head>
@@ -398,75 +509,29 @@ body::before{
   <span class="sparkle s6">✧</span>
 </div>
 <div class="cursor-glow" id="cursorGlow"></div>
+<div class="sakura-layer" id="sakuraLayer" aria-hidden="true"></div>
 
 
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#f6f8fa;padding:28px 12px;">
 <tr><td align="center">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="mail-shell" style="position:relative;z-index:1;max-width:680px;background:#ffffff;border:1px solid #d0d7de;border-radius:10px;overflow:hidden;">
 <tr>
-<td style="padding:28px 32px 22px;border-bottom:1px solid #d8dee4;">
-<div class="title-wrap section-trigger" style="font-size:24px;line-height:1.35;font-weight:700;letter-spacing:.2px;">2027 推免李昱萱男朋友申请书<span class="heart-pulse" aria-hidden="true">♥</span></div>
+<td class="letter-header" style="padding:28px 32px 22px;border-bottom:1px solid #d8dee4;">
+<div class="title-wrap section-trigger" style="font-size:24px;line-height:1.35;font-weight:700;letter-spacing:.2px;">第 100 天纪念信<span class="heart-pulse" aria-hidden="true">♥</span></div>
 </td>
 </tr>
 <tr>
-<td style="padding:22px 32px 4px;">
-<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="font-size:14px;line-height:1.7;">
-<tr>
-<td style="width:88px;padding:3px 0;color:#57606a;">申请人：</td>
-<td style="padding:3px 0;font-weight:600;">谭皓天 <span class="meta-heart" aria-hidden="true">♥</span></td>
-</tr>
-<tr>
-<td style="width:88px;padding:3px 0;color:#57606a;">本科：</td>
-<td style="padding:3px 0;font-weight:600;">武汉理工大学 · 人工智能 <span class="love-chip" aria-hidden="true">Love Mode On ♥</span></td>
-</tr>
-<tr>
-<td style="width:88px;padding:3px 0;color:#57606a;">报考方向：</td>
-<td style="padding:3px 0;font-weight:600;">李昱萱男朋友 <span class="meta-heart" aria-hidden="true">♥</span></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr><td style="padding:14px 32px 2px;">
-<div style="font-size:15px;line-height:1.85;font-weight:600;margin:8px 0 12px;">亲爱的李昱萱大王：<span class="paragraph-heart" aria-hidden="true">♥</span></div>
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">本人现补上推免至李昱萱大王身边继续深造的推免申请书。考虑到本人已经提前上岗，具备一定“男朋友实习经验”，现申请免初试、免复试，直接续聘，并且永远满分上岗。</div>
-</td></tr>
-
-<tr><td style="padding:16px 32px 6px;">
-<div class="section-trigger" style="font-size:17px;font-weight:700;line-height:1.5;padding-left:10px;border-left:3px solid #2da44e;">一、申请理由 <span class="section-hearts" aria-hidden="true"><span>♥</span></span></div>
-</td></tr>
-<tr><td style="padding:2px 32px 4px;">
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">武汉理工大学人工智能在读，平时会写代码、找 Bug；感情里争取少制造 Bug</div>
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">课题组做医学图像分割，但在恋爱反对“分割”</div>
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">正在认真准备保研：保研是阶段任务，但是和李昱萱大王一直走下去是长期课题啦</div>
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">最关键优势：我的女朋友是李昱萱大王<span class="paragraph-heart" aria-hidden="true">♥</span></div>
-</td></tr>
-
-<tr><td style="padding:16px 32px 6px;">
-<div class="section-trigger" style="font-size:17px;font-weight:700;line-height:1.5;padding-left:10px;border-left:3px solid #2da44e;">二、本人承诺 <span class="section-hearts" aria-hidden="true"><span>♥</span></span></div>
-</td></tr>
-<tr><td style="padding:2px 32px 4px;">
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">唯一志愿李昱萱，不服从调剂啊</div>
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">忙前会说，不玩失踪</div>
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">学习再忙，也不把李昱萱降级成“支线任务”</div>
-</td></tr>
-
-<tr><td style="padding:16px 32px 6px;">
-<div class="section-trigger" style="font-size:17px;font-weight:700;line-height:1.5;padding-left:10px;border-left:3px solid #2da44e;">三、培养计划 <span class="section-hearts" aria-hidden="true"><span>♥</span></span></div>
-</td></tr>
-<tr><td style="padding:2px 32px 4px;">
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">短期：陪着你</div>
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">中期：一起经历升学、保研、毕业、工作这些乱七八糟但重要的阶段</div>
-<div style="font-size:15px;line-height:1.85;margin:8px 0;">长期：永不毕业，永远爱你<span class="paragraph-heart" aria-hidden="true">♥</span></div>
-</td></tr>
-<tr>
-<td style="padding:8px 32px 26px;">
-<div style="margin:18px 0 0;padding:16px 18px;border:1px solid #d0d7de;border-radius:8px;background:#f6f8fa;font-size:15px;line-height:1.8;">
-李昱萱大王审批：  ☑ 同意    ☑ 非常同意    ☑ 直接长期录取（行了我帮你批了）  ♥
+<td class="letter-content" style="padding:26px 32px 34px;">
+<div class="letter-copy">
+<p class="salutation">To dear 李昱萱：<span class="paragraph-heart" aria-hidden="true">♥</span></p>
+<p>好久都没有写过小作文了啊哈哈哈，上一次写作文应该还是在2024.6.7吧，至于上一次写小作文……不记得了🥲总之，非常高兴能与你一起共度这一百天的美好时光😘是时候写一篇小作文纪念一下啦😎（由于笨人高考语文107作文偏题，文笔实在有限，请李昱萱大王见谅啦🥺）</p>
+<p>在我印象中第一次见你是22年暑假在睿禾补课？不过那时候你貌似不认识我啊哈哈哈啊哈，高中时对你的了解也不是很多，只是有时候晚上一起走回家🤔再到后来……就是今年四月了吧，还是非常巧合的（我都忘记当时为啥我会在那个群里了，xyy拉的？🥲）你在群里总是癫啊癫的，包括后来帮你弄gpt、五一出去玩（这里让我印象最深的是你居然带了缩小版麻将去玩？？？），和你聊的时候就觉得你……傻乐傻乐的啊哈哈哈哈哈哈哈哈哈哈，很可爱啊很可爱😍再到后来就是去你学校自习，其实那天我感觉互相都有点意思？（可能是我的错觉吧🫣）但是第二天你说不想出来了我的心都凉了一半😰😭不过后面你喊我挂机学习又让我重新有了希望啊哈哈哈哈哈，这是我第一次觉得期末复习也是可以很开心很幸福的🥰期末结束后出去玩的前一天晚上，我还在一直问项浩哲你到底对我有没有意思😭项浩哲一直跟我说稳了稳了但我还是半信半疑（主要是我太爱胡思乱想了，总是喜欢想万一怎么样怎么办……😖）那天出去玩，一直不知道什么时候跟你表白，后来想着表白太紧张了我完全不知道怎么弄，干脆找个机会牵你的手好了……脑子里依旧在进行激烈的思想斗争啊。不过依旧难逃当面表白的大考啊😩第二天被你揪出来当面表白，都说表白要买花，但是我当时觉得花太大了不好拿，太小了又太寒酸了……就去popmart给你买了个你之前说的喜欢的盲盒，一路上也是紧张啊紧张啊紧张啊，不知道啥时候表白（现在想起来依旧是非常紧张啊😱）最终也是在河边成功表白了哦耶耶耶耶，如释重负啊嘻嘻😁</p>
+<p>和你在一起后我的生活也是变的丰富了起来，不再只是学习➕羽毛球了。陪你在武汉乱逛，和你一起去合肥旅游（这里我真得说一下你那天朋友圈都没有我送的花呜呜呜呜呜呜，人家cyy和xyy的都有，当时我都想发朋友圈的伤心了好久最后决定不发了呜呜呜呜呜😭），以前我觉得这只是美好的愿望，没想到真的能成真。我的日常不再只有枯燥的课程，还有你每天的陪伴。有了你我真的很幸福很幸福。我非常幸运能遇见你，毕竟我在各个方面都不突出，比不上别人，我会珍惜你、保护你，和你一起走下去。有时候我可能太……务实了？只会分析某些事是否真的能实现，是否在我能力范围内，所以可能让你觉得我不如xyy懂浪漫？……主要是我希望我对你的每一个承诺都尽可能能实现，所以可能我缺少了点浪漫基因吧……还请李昱萱大王多包容包容了🥺我也争取变得更浪漫一点啊哈哈哈哈哈哈🌹</p>
+<p>至于未来的研究生阶段，你会去香港，但我也不清楚我会在哪个城市哪个大学。不过我觉得这并不是问题，即使我们在异地，我也会定期去找你的🥰只是日常可能只能视频了呜呜呜😭不过没关系，有你的陪伴就会很幸福。现在只是我们在一起的100天，我相信我们的未来会有+∞个100天，和你一起生活，和你一起共度难关，和你一起到处旅游，去香港，去北欧……你就等着吧嘻嘻😘不允许嫌弃我😡</p>
+<p>行了，也是到1:54了，我好困。AI时代不借助大模型手搓作文目前应该是可以申请非遗了😭太困难了，本来就没有多少文学细胞，高中毕业后全部脱水嘎掉了😣这篇写的感觉确实不咋地，但是我真的尽力了😭李昱萱大王别生气😭</p>
+<p class="closing">我真得睡了，我会在梦里想你的😘</p>
 </div>
-<div style="margin-top:26px;font-size:15px;line-height:1.9;">
-<div>申请人：谭皓天 <span class="paragraph-heart" aria-hidden="true">♥</span></div>
-<div>2026 年 9 月</div>
-</div>
+<div class="letter-signature">from 永远爱你的谭皓天 <span class="paragraph-heart" aria-hidden="true">♥</span></div>
 </td>
 </tr>
 </table>
@@ -733,6 +798,36 @@ body::before{
   window.addEventListener('load', function(){
     setTimeout(launchOpeningHearts, 120);
   });
+})();
+</script>
+
+<script>
+(function(){
+  const layer = document.getElementById('sakuraLayer');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!layer || reduceMotion) return;
+
+  function createPetal(initial){
+    const petal = document.createElement('span');
+    petal.className = 'sakura-petal';
+    const size = 9 + Math.random() * 11;
+    const duration = 6.8 + Math.random() * 6.2;
+    const delay = initial ? -(Math.random() * duration) : 0;
+    petal.style.setProperty('--x', (Math.random() * 100).toFixed(2) + 'vw');
+    petal.style.setProperty('--size', size.toFixed(1) + 'px');
+    petal.style.setProperty('--fall-duration', duration.toFixed(2) + 's');
+    petal.style.setProperty('--delay', delay.toFixed(2) + 's');
+    petal.style.setProperty('--sway', (-45 + Math.random() * 90).toFixed(1) + 'px');
+    petal.style.setProperty('--drift', (-100 + Math.random() * 200).toFixed(1) + 'px');
+    petal.style.setProperty('--start-rot', (-90 + Math.random() * 180).toFixed(1) + 'deg');
+    petal.style.setProperty('--opacity', (.48 + Math.random() * .42).toFixed(2));
+    if(Math.random() > .72) petal.style.filter = 'hue-rotate(-10deg) saturate(.75)';
+    layer.appendChild(petal);
+    window.setTimeout(function(){ petal.remove(); }, Math.max(0, (duration + delay + .5) * 1000));
+  }
+
+  for(let i=0;i<24;i++) createPetal(true);
+  window.setInterval(function(){ createPetal(false); }, window.innerWidth < 600 ? 520 : 360);
 })();
 </script>
 
